@@ -254,23 +254,24 @@ text-decoration: underline
 margin: 30px;
 }
 
-.insta_btn2{/*ボタンの下地*/
+.insta_btn3 {/*ボタンの下地*/
   color: #FFF;/*文字・アイコン色*/
-  border-radius: 7px;/*角丸に*/
+  border-radius: 14px;/*角丸に*/
   position: relative;
-  display: inline-block;
-  height: 50px;/*高さ*/
-  width: 190px;/*幅*/
+  display: block;
+  height: 120px;/*高さ*/
+  width: 120px;/*幅*/
   text-align: center;/*中身を中央寄せ*/
-  font-size: 25px;/*文字のサイズ*/
-  line-height: 50px;/*高さと合わせる*/
+  padding-top: 12px;/*上側との余白*/
+  box-sizing: border-box;
+  font-size: 19px;/*文字のサイズ*/
   background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
   background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
   overflow: hidden;/*はみ出た部分を隠す*/
   text-decoration:none;/*下線は消す*/
 }
 
-.insta_btn2:before{/*グラデーション②*/
+.insta_btn3:before{/*グラデーション②*/
   content: '';
   position: absolute;
   top: 0;
@@ -281,26 +282,23 @@ margin: 30px;
   background: linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
 }
 
-.insta_btn2 .fa-instagram{/*アイコン*/
-  font-size: 35px;/*アイコンサイズ*/
+.insta_btn3 div {
   position: relative;
-  top: 4px;/*アイコン位置の微調整*/
 }
 
-.insta_btn2 span {/*テキスト*/
-  display:inline-block;
-  position: relative;
-  transition: .5s
+.insta_btn3 .fa-instagram {
+    font-size: 70px;/*アイコンサイズ*/
+    position: relative;
+    display:inline-block;
+    position: relative;
+    transition: .5s
 }
 
-.insta_btn2:hover span{/*ホバーで一周回転*/
+.insta_btn3 .fa-instagram:hover {/*ホバーで一周回転*/
   -webkit-transform: rotateX(360deg);
   -ms-transform: rotateX(360deg);
   transform: rotateX(360deg);
 }
-
-
-
 
 .in3{
     height: auto;
