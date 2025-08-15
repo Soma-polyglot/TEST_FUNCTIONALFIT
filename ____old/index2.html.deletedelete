@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<meta name="keywords" content="FUNCTIONALFIT,ファンクショナルフィット,インソール,ACCA,ケミフェルト" />
+<meta name="description" content="FUNCTIONALFITは生体力学に基づき開発された、現役アスリートやコーチが認めたインソールです。" />
+<meta name="format-detection" content="telephone=no" />
+<link href="style.css" rel="stylesheet" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+<script src="plugins/modernizr.custom.47510.js"></script>
+<title>ファンクショナルフィット │ FUNCTIONALFIT</title>
+<!-- Start Google Analitics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77865813-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- End Google Analitics -->
+</head>
+<body class="home">
+<!-- #main-wrapper -->
+<div id="main-wrapper">
+		<header role="banner">
+				<h1><a href="#">FUNCTIONALFIT</a></h1>
+				<a class="btn-drawer"><span>メニュー</span></a> </header>
+		<nav>
+				<ul>
+						<li><a href="#policy">FUNCTIONALFITとは</a></li>
+						<li><a href="#profile">オールラウンドタイプ</a></li>
+						<li><a href="#activity">商品の特徴</a></li>
+						<li><a href="#sozai">素材(ケミフェルト)</a></li>
+						<li><a href="#links">8つの効果</a></li>
+						<li><a href="#office">販売元</a></li>
+						<li><a class="contact" href="mailto:contact@f-fit.info">お問い合わせ</a></li>
+				</ul>
+		</nav>
+		<main> 
+				<!-- #slide-container -->
+				<div id="slide-container">
+                    <p class="main_image" alt="ファンクショナルフィット FUNCTIONALFIT kinetic insoles"></p>
+				</div>
+				<!-- /#slide-container --> 
+				<!-- #policy -->
+				<section id="policy">
+						<h1><span>FUNCTIONALFIT <span class="reg">&reg;</span> とは</span></h1>
+						<p>生体力学に基づき開発された、現役アスリートやコーチが認めたインソールです。<br/>
+								3つのアーチを補正して、運動能力がアップします。</p>
+				</section>
+				<!-- /#policy --> 
+				<!-- #profile -->
+				<section id="profile">
+						<h1><span>オールラウンドタイプについて</span></h1>
+						
+						<!-- .left-column -->
+						<div class="left-column">
+								<h2>MULTI PERFORMANCE<br />
+										オールラウンドタイプ</h2>
+								<ul>
+										<li>●バイオメカニクスの研究に基づいて設計されたファンクショナルフィットインソールの基本形です。</li>
+										<li>●足部機能に重要な５つの骨を正常な位置にセットすることで様々な効果が期待できます。</li>
+										<li>●足裏裏全体のクッション性を確保したオールラウンドタイプです。</li>
+								</ul>
+								<h2>ACCA推奨商品</h2>
+								<p> ACCAはコンディショニングコーチの養成を行っています。<br>
+										また、各スポーツのトレーナーやコーチがバイオメカニクス<br>
+										(骨格構造、筋、神経系からアプローチした生体力学)を研究する団体です。 </p>
+						</div>
+						<!-- /.left-column --> 
+						<!-- .right-column -->
+						<div class="right-column">
+								<figure><img src="images/allround.png" alt="ファンクショナルフィット FUNCTIONALFIT オールラウンドタイプ" /></figure>
+						</div>
+				</section>
+				<!-- /#profile --> 
+				
+				<!-- #schedule -->
+				<section id="activity">
+						<h1><span>商品の特徴</span></h1>
+						<!-- .left-column -->
+						<div class="left-column">
+								<ul>
+										<li>●ファンクショナルフィットインソールはシューズと足部を連結する機能的パーツとなり、ショーパール関節とリスフラン関節の間にある重要な５つの骨を正常な位置にセットすることで、３アーチが正しく形成されると共に運動機能が向上します。</li>
+										<li>●３アーチがバランス良く機能すると、足上部(身体)からのパワーを無駄なくシューズに伝達できます。</li>
+										<li>●生体力学的に非常に高い効果を期待できるインソールです。</li>
+								</ul>
+						</div>
+						<!-- /.left-column --> 
+						<!-- .right-column -->
+						<div class="right-column">
+								<figure><img src="images/tokutyou.png" alt="ファンクショナルフィット FUNCTIONALFIT　関節"></figure>
+						</div>
+						<!-- /.right-column <--></--> </section>
+				<!-- /#schedule --> 
+				
+				<!-- #schedule --> 
+				<a name="sozai" id="sozai"></a>
+				<section id="activity">
+						<h1><span>素材(ケミフェルト)</span></h1>
+						<!-- .left-column -->
+						<div class="left-column">
+								<ul>
+										<li>●天然ゴムと特殊な繊維を混ぜ合せた、ゴムとフェルト両方の性能を併せ持つハイブリッド素材です。</li>
+										<li>●ゴムでありながら吸湿性も備えるインソールに最適な素材です。</li>
+										<li>●生体力学的に非常に高い効果を期待できるインソールです。</li>
+								</ul>
+						</div>
+						<!-- /.left-column --> 
+						<!-- .right-column -->
+						<div class="right-column">
+								<figure><img src="images/sozai.png" alt="ファンクショナルフィット FUNCTIONALFIT ケミフェルト　けみふぇると"></figure>
+						</div>
+						<!-- /.right-column --> 
+				</section>
+				<!-- /#schedule --> 
+				
+				<!-- /#office --> 
+				<!-- #links -->
+				
+				<section id="links">
+						<h1><span>8つの効果</span></h1>
+						<ul>
+								<li class="first-row first-col"><img src="images/list01.png" alt="ファンクショナルフィット効果 運動能力UP"/>
+										<p class="bdb">運動能力 UP</p>
+										<p>3アーチを補正することでパワーを無駄なく伝達し運動能力をUPします。</p>
+								</li>
+								　
+								<li class="first-row"><img src="images/list02.png" alt="ファンクショナルフィット効果 足トラブル軽減" />
+										<p class="bdb">足トラブル軽減</p>
+										<p>シンスプリントやランナーズニーの予防や改善が期待できます。</p>
+								</li>
+								　
+								<li class="first-row"><img src="images/list03.png" alt="ファンクショナルフィット効果 筋ポンプ作用UP" />
+										<p class="bdb">筋ポンプ作用 UP</p>
+										<p>下肢静脈の筋ポンプ作用が上がり、血流が良くなり、疲労しにくくなります。</p>
+								</li>
+								<li class="first-col"><img src="images/list04.png" alt="ファンクショナルフィット効果 外反母趾の予防" />
+										<p class="bdb">外反母趾の予防</p>
+										<p>扁平足やハイアーチ、外反母趾などの予防や改善が期待できます。</p>
+								</li>
+								　
+								<li><img src="images/list05.png" alt="ファンクショナルフィット効果 フィット性UP" />
+										<p class="bdb">フィット性UP</p>
+										<p>足とシューズがフィットして動きのロスが無くなります。</p>
+								</li>
+								　
+								<li><img src="images/list06.png" alt="ファンクショナルフィット効果 X脚・O脚を修正" />
+										<p class="bdb">X脚・O脚を修正</p>
+										<p>脛骨の傾きを戻すことでX脚やO脚を修正する効果があります。</p>
+								</li>
+								　
+								<li class="first-col"><img src="images/list07.png" alt="ファンクショナルフィット効果 衝撃吸収" />
+										<p class="bdb">衝撃吸収</p>
+										<p>特殊な形状が体圧を分散し、踵にかかる衝撃を吸収します。</p>
+								</li>
+								<li><img src="images/list08.png" alt="ファンクショナルフィット効果 抗菌・防臭効果" />
+										<p class="bdb">抗菌・防臭効果</p>
+										<p>抗菌・防臭効果により足のいやな匂いをカットします。</p>
+								</li>
+						</ul>
+				</section>
+				
+				<!-- #office -->
+				<section id="office">
+						<h1><span>販売元</span></h1>
+						<!-- .left-column -->
+						<div class="left-column">
+								<p> F style 合同会社<br>
+										メールアドレス : <a class="contact" href="mailto:contact@f-fit.info">contact@f-fit.info</a> </p>
+								<address>
+								<dl>
+										<!--<dt>TEL</dt>
+              <dd>048-711-7203</dd>
+              <dt>FAX</dt>
+              <dd>048-832-9973</dd>-->
+								</dl>
+								</address>
+						</div>
+						<!-- /.left-column --> 
+				</section>
+		</main>
+		<footer role="contentinfo"> <small>Copyright &copy; F style 合同会社 All rights reserved.</small> </footer>
+</div>
+<!-- /#main-wrapper --> 
+<!-- Scripts --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
+<script src="plugins/bxslider/jquery.bxslider.min.js"></script>
+<script src="page.js"></script> 
+</body>
+</html>

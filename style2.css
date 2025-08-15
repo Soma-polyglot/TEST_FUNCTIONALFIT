@@ -1,0 +1,301 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+  color: #333;
+  font-family: "游ゴシック体", yugothic, "游ゴシック", "Yu Gothic", "メイリオ", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+article, aside, footer, header, nav, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, span, em, small, strong, sub, sup, mark, del, ins, strike, abbr, dfn, blockquote, q, cite, code, pre, ol, ul, li, dl, dt, dd, div, section, article, main, aside, nav, header, hgroup, footer, img, figure, figcaption, address, time, audio, video, canvas, iframe, details, summary, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+a, a:visited {
+  color: inherit;
+  outline: none;
+}
+
+img {
+  border: none;
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, sans-serif;
+  font-size: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+table {
+  border: 1px solid #eee;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #eee;
+  padding: 4px 6px;
+  text-align: left;
+  vertical-align: top;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::after, blockquote::before, q::after, q::before {
+  content: "";
+  content: none;
+}
+
+body{
+  background: transparent url(images/bg1.png) no-repeat center center/cover;
+  width: 100vw;
+  /*height: 100vh;*/
+}
+
+.inner{
+  height: auto;
+  width: 1100px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.flex_box a:hover{
+  opacity: 0.6;
+}
+
+#mv .inner{
+  width: 1100px;
+  /*height: 550px;*/
+  background-color: #fff;
+  margin-top: 50px;
+}
+
+header img{
+  width: 400px;
+}
+
+header .inner h1{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.mv-top img{
+  display: block;
+}
+
+.japan{
+  width: 180px;
+  padding-left: 20px;
+}
+
+.mv-title{
+  width: 300px;
+  margin: 0 auto;
+}
+
+.mv-top p{
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 20px 0 40px;
+}
+
+#mv .inner{
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+.mv-bottom img{
+  width: 400px;
+  display: block;
+  margin: 0 0 0 auto;
+  padding: 30px 20px 0 0;
+}
+
+.flex_box {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+padding: 0 5% 0;
+gap: 80px;
+}
+
+.flex_box img{
+ width: 100%;
+}
+
+.footer-bottom img{
+width: 180px;
+}
+
+.footer-bottom{
+text-align: right;
+position: relative;
+padding: 10px;
+margin-bottom: 50px;
+}
+
+.footer-bottom p{
+display: inline-block;
+color: #fff;
+position: absolute;
+bottom: 10px;
+right: 200px;
+}
+
+.spbr{
+display: none;
+}
+
+footer{
+margin-top: 20px;
+}
+
+
+.flex_box a{
+display: block;
+text-decoration: none;
+
+width: 30%;
+}
+
+@media screen and (max-width: 1100px){
+
+body{
+  width: auto;
+  height: auto;
+}
+
+.flex_box{
+  display: block;
+}
+
+.flex_box a{
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 150px;
+}
+
+.flex_box a:last-child{
+  padding-bottom: 50px;
+}
+
+.inner{
+  width: 90%;
+}
+
+#mv .inner{
+  width: 90%;
+  height: auto;
+  background-color: #fff;
+  margin-top: 50px;
+  margin: 30px auto 0;
+}
+}
+
+@media screen and (max-width: 767px){
+.flex_box a{
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.japan{
+  width: 180px;
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+
+.mv-bottom img{
+  width: 80%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.mv-top{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.mv-top p{
+  font-size: 15px;
+}
+
+#mv .inner{
+  margin-top: 20px;
+}
+
+.footer-bottom img{
+  width: 140px;
+}
+
+.footer-bottom p{
+  right: 160px;
+  font-size: 10px;
+}
+
+footer{
+  margin-top: 10px;
+}
+
+.footer-bottom{
+  margin-bottom: 20px;
+}
+
+.spbr{
+  display: block;
+  }
+
+}
+
+
+
+.copy{
+  padding-top: 30px;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 767px){
+  .copy{
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="swiper.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 認証モーダル用スタイル */
+        #auth-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 10000;
+        }
+        #auth-modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .auth-form {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+        }
+        .auth-form h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .auth-form input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .auth-form button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            background-color: #007cba;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .auth-form button:hover {
+            background-color: #005a87;
+        }
+        .auth-error {
+            color: #d32f2f;
+            margin-top: 10px;
+            display: none;
+        }
+        .site-content {
+            display: none;
+        }
+    </style>
+    <title>ファンクショナルフィット|FUNCTIONAL FIT</title>
+    <link rel="icon" href="images/favicon16.ico" sizes="16x16">
+    <link rel="icon" href="images/favicon32.ico" sizes="32x32">
+    <meta name="description" content="ファンクショナルフィットは、生体力学と、現役アスリートやコーチによる長期間テストによって開発されたフットギアブランドです。運動能力アップのための技術が詰め込まれています。" />
+    <meta property="og:url" content="https://f-fit.info/index.html">
+    <meta property="og:title" content="ファンクショナルフィット|FUNCTIONAL FIT">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="ファンクショナルフィットは、生体力学と、現役アスリートやコーチによる長期間テストによって開発されたフットギアブランドです。運動能力アップのための技術が詰め込まれています。">
+    <meta property="og:image" content="https://f-fit.info/images/ogp.png"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:locale" content="ja_JP" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RM7ZQGBFWE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RM7ZQGBFWE');
+</script>
+
+<body>
+    <!-- 認証モーダル -->
+    <div id="auth-modal">
+        <div class="auth-form">
+            <h2>認証が必要です</h2>
+            <form id="auth-form">
+                <input type="text" id="username" placeholder="ユーザーID" required>
+                <input type="password" id="password" placeholder="パスワード" required>
+                <button type="submit">ログイン</button>
+                <div class="auth-error" id="auth-error">IDまたはパスワードが間違っています</div>
+            </form>
+        </div>
+    </div>
+
+    <!-- サイトコンテンツ -->
+    <div class="site-content">
+    <div class="inner" id="homepage-header" >
+        <div class="top">
+            <div class="hidden_box">
+                <label for="label1">LINE UP</label>
+                <ul class="abcdef">
+                    <li><a href="#news">NEWS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#advisor">ADVISORS</a></li>
+                </ul>
+                <input type="checkbox" id="label1"/>
+                <div class="hidden_show">
+                    <div class="flex_box">
+                        <div class="flex-left">
+                            <p><a href="insole.html">INSOLES</a></p>
+                            <ul>
+                                <li><a href="insole/racing.html">RACING MODEL</a></li>
+                                <li><a href="insole/running.html">RUNNING MODEL</a></li>
+                                <li><a href="insole/allround.html">ALLROUND MODEL</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-right">
+                            <p><a href="socks.html">SOCKS</a></p>
+                            <ul>
+                                <li><a href="socks/racing.html">RACING SOCKS（5本指）</a></li>
+                                <li><a href="socks/running5.html">RUNNING SOCKS（5本指）</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-logo">
+                <h1><img id="logo-icon" src="images/logo1.png" alt="FANCTIONAL FIT"></h1>
+            </div>
+        </div>
+        <div class="middle pcbr">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="insole/racing.html"><img src="images/img3.png" alt="Swiper01"></a></div>
+                    <div class="swiper-slide"><a href="insole/running.html"><img src="images/img2.png" alt="Swiper02"></a></div>
+                    <div class="swiper-slide"><a href="insole/allround.html"><img src="insole/images/insole-pc-black.png" alt="Swiper03"></a></div>
+                    <div class="swiper-slide"><a href="socks/racing.html"><img src="socks/images/socks-pc-green.png" alt="Swiper04"></a></div>
+                    <div class="swiper-slide"><a href="socks/running5.html"><img src="socks/images/running-socks-pc.png" alt="Swiper05"></a></div>
+                    <div class="swiper-slide"><a href="socks/running.html"><img src="images/img6.png" alt="Swiper06"></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="middle spbr">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="insole/racing.html"><img src="images/smart-img1.png" alt="Swiper01"></a></div>
+                    <div class="swiper-slide"><a href="insole/running.html"><img src="images/smart-img2.png" alt="Swiper02"></a></div>
+                    <div class="swiper-slide"><a href="insole/allround.html"><img src="images/smart-img3.png" alt="Swiper03"></a></div>
+                    <div class="swiper-slide"><a href="socks/racing.html"><img src="images/smart-img4.png" alt="Swiper04"></a></div>
+                    <div class="swiper-slide"><a href="socks/running5.html"><img src="images/smart-img5.png" alt="Swiper05"></a></div>
+                    <div class="swiper-slide"><a href="socks/running.html"><img src="images/smart-img6.png" alt="Swiper06"></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <img src="images/logo2.png" alt="FUNCTIONAL FIT">
+        </div>
+    </div>
+    <div class="inner in3" id="news">
+        <div class="inner2">
+            <h2 class="section-title">NEWS</h2>
+            　　<div class="news-items">
+
+                <div class="news-item"><!-- ここからニュースのアイテム（ここのdivを増やすとニュースの内容を増やせる）-->
+                    <time class="news-time">2025-08-10</time><!-- 日付 -->
+                    <div class="news-title">ウェブサイトを更新しました。</div>
+				</div>
+
+                <div class="news-item"><!-- ここからニュースのアイテム（ここのdivを増やすとニュースの内容を増やせる）-->
+                    <time class="news-time">2019-10-28</time><!-- 日付 -->
+                    <div class="news-title">ウェブサイトをリニューアルしました。ソックスサイト一覧ページは<a href="https://functionalfit-test.vercel.app/socks.html">こちら</a>。<!-- ニュースの内容 --></div>
+                </div><!-- ここまでニュースのアイテム-->
+				
+                <div class="news-item">
+                    <time class="news-time">2019-10-28</time>
+                    <div class="news-title">ウェブサイトをリニューアルしました。インソールサイト一覧ページは<a href="insole.html">こちら</a>。</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="inner in3" id="contact">
+        <div class="inner2">
+            <h2 class="section-title">CONTACT</h2>
+            <p class="contact-p">F style 合同会社<br>メールアドレス :<a href="mailto:contact@f-fit.info">contact@f-fit.info</a></p>
+        </div>
+    </div>
+    <div class="inner in3" id="advisor">
+        <div class="inner2">
+            <h2 class="section-title">ADVISORS</h2>
+            <div class="center">
+
+<div class="ad-item">
+                    <div class="ad-item-img">
+                        <a href="https://www.acc-a.com/" target="_blank"><img src="images/ad-logo.png" alt=""></a>
+                    </div>
+                    <div class="ad-item-body">
+                        <h3>ACCAの推奨商品</h3>
+                        <p>FUNCTIONALFITはアスレティックコンディショニングコーチズ協会推奨の製品です。</p>
+                    </div>
+                </div>
+
+<a href="/advisors/iwabuchi.html">
+  <div class="item-container">
+    <img src="/advisors/images/iwabuchi-1.jpg" width="200px" />
+    <h3>1. 巖淵　知乃（いわぶち　ちの）</h3>
+  </div> 
+</a>
+
+<br />
+
+<a href="/advisors/yamamoto.html">
+  <div class="item-container">
+    <img src="/advisors/images/yamamoto-1.jpg" width="200px" />
+    <h3>2. 山本　淳一（やまもと　じゅんいち）</h3>
+  </div>
+</a>
+
+<br />
+<a href="/advisors/nakayama.html">
+  <div class="item-container">
+    <img src="/advisors/images/nakayama-1.png" width="200px" />
+    <h3>3. 中山　彩理香（なかやま　さりか）</h3>
+  </div>
+</a>
+<br />
+<a href="/advisors/kai.html">
+  <div class="item-container">
+    <img src="/advisors/images/kai-1.png" width="200px" />
+    <h3>4. 甲斐　瑠夏（かい　るか）</h3>
+  </div>
+</a>
+<br />
+<a href="/advisors/tomiuchi.html">
+  <div class="item-container">
+    <img src="/advisors/images/tomiuchi-1.png" width="200px" />
+    <h3>5. 富内　檀（とみうち　だん)</h3>
+  </div>
+</a>
+<br />
+<a href="/advisors/hirano.html">
+  <div class="item-container">
+    <img src="/advisors/images/hirano-1.png" width="200px" />
+    <h3>6. 平野　司（ひらの　つかさ）</h3>
+  </div>
+</a>
+				
+                
+				
+				
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <p class="copy">Copyright &copy; F style 合同会社 All rights reserved.</p>
+    </footer>
+    </div> <!-- /site-content -->
+    
+    <!-- 認証スクリプト -->
+    <script>
+        // 認証設定
+        const AUTH_CREDENTIALS = {
+            username: 'admin',
+            password: 'test01'
+        };
+
+        // 認証チェック関数
+        function checkAuthentication() {
+            const isAuthenticated = sessionStorage.getItem('authenticated');
+            const siteContent = document.querySelector('.site-content');
+            const authModal = document.getElementById('auth-modal');
+
+            if (isAuthenticated === 'true') {
+                // 認証済み - サイトコンテンツを表示
+                siteContent.style.display = 'block';
+                authModal.classList.remove('show');
+            } else {
+                // 未認証 - 認証モーダルを表示
+                siteContent.style.display = 'none';
+                authModal.classList.add('show');
+            }
+        }
+
+        // 認証処理
+        function authenticate(username, password) {
+            if (username === AUTH_CREDENTIALS.username && password === AUTH_CREDENTIALS.password) {
+                sessionStorage.setItem('authenticated', 'true');
+                return true;
+            }
+            return false;
+        }
+
+        // ページ読み込み時の処理
+        document.addEventListener('DOMContentLoaded', function() {
+            checkAuthentication();
+
+            // 認証フォームのイベントリスナー
+            const authForm = document.getElementById('auth-form');
+            const authError = document.getElementById('auth-error');
+
+            authForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+
+                if (authenticate(username, password)) {
+                    // 認証成功
+                    authError.style.display = 'none';
+                    checkAuthentication();
+                    // フォームをリセット
+                    authForm.reset();
+                } else {
+                    // 認証失敗
+                    authError.style.display = 'block';
+                    document.getElementById('password').value = '';
+                }
+            });
+        });
+
+        // タブ/ウィンドウが閉じられる前の処理（オプション）
+        window.addEventListener('beforeunload', function() {
+            // sessionStorageは自動的にクリアされるが、明示的にクリアも可能
+            // sessionStorage.removeItem('authenticated');
+        });
+    </script>
+
+    <script src="swiper.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  loop: true,
+  pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    autoplay: {
+    delay: 3000,
+    disableOnInteraction: true
+  },
+});
+    </script>
+    <script src="smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+</html>
+

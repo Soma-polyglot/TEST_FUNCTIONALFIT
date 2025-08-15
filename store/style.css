@@ -1,0 +1,294 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    background: #fff;
+    color: #333;
+    font-family: "游ゴシック体", yugothic, "游ゴシック", "Yu Gothic", "メイリオ", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  
+  article, aside, footer, header, nav, section, main {
+    display: block;
+  }
+  
+  h1, h2, h3, h4, h5, h6, a, p, span, em, small, strong, sub, sup, mark, del, ins, strike, abbr, dfn, blockquote, q, cite, code, pre, ol, ul, li, dl, dt, dd, div, section, article, main, aside, nav, header, hgroup, footer, img, figure, figcaption, address, time, audio, video, canvas, iframe, details, summary, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a, a:visited {
+    color: inherit;
+    outline: none;
+  }
+  
+  img {
+    border: none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+  }
+  
+  code, kbd, pre, samp {
+    font-family: monospace, sans-serif;
+    font-size: inherit;
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  table {
+    border: 1px solid #eee;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #eee;
+    padding: 4px 6px;
+    text-align: left;
+    vertical-align: top;
+  }
+  
+  blockquote, q {
+    quotes: none;
+  }
+  
+  blockquote::after, blockquote::before, q::after, q::before {
+    content: "";
+    content: none;
+  }
+
+  .inner{
+      width: 1100px;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #fff;
+  }
+
+  h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+.sortNav {
+  overflow: hidden;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.sortNav li {
+  font-size: 30px;
+    list-style:none;
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+    padding: 5px 20px;
+    cursor: pointer;
+    border: 1px solid #333;
+    color: #666;
+}
+
+h3{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 36px;
+}
+
+h4{
+  font-size: 30px;
+  color: #666;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+table th, table td {
+  border: solid 1px #999;
+  padding: 15px;
+}
+
+table th{
+  font-size: 20px;
+  color: #666;
+}
+
+th span{
+  display: inline-block;
+  color: #fff;
+  background-color: #000;
+  padding: 5px 20px;
+  float: right;
+  font-size: 16px;
+}
+
+th .socks{
+  background-color: #aaa;
+  margin-right: 30px;
+  border: 1px solid #666;
+}
+
+@media screen and (max-width: 1100px) {
+  .inner {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.sp{
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .sortNav li{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  h3{
+    font-size: 30px;
+  }
+
+  h4{
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  table th{
+    text-align: center;
+  }
+
+  th span{
+    float: none;
+    margin-top: 10px;
+  }
+
+  th .socks{
+    margin-right: 0;
+  }
+
+  th .insole{
+    position: relative;
+    right: 15px;
+  }
+
+  th .insole2{
+    right: 0;
+  }
+
+  .sp{
+    display: table-row;
+  }
+
+  .pc{
+    display: none;
+  }
+
+  table th{
+    font-size: 18px;
+    color: #666;
+  }
+
+  table td{
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+body{
+  background-image: url("images/bg1.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+header h1 {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+header img {
+  width: 400px;
+  max-width: 90%;
+}
+
+@media screen and (max-width: 767px){
+  header h1 {
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                   10/23  変更のお試し
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.icon{
+  height: 60px;
+  width: auto;
+  float:right;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+th p{
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+th i{
+  padding-left: 15px;
+}
+
+table th{
+  padding: 0;
+}
+
+@media screen and (max-width: 767px){
+  .icon{
+    float:none;
+    text-align: center;
+    padding-right: 0;
+    padding-bottom: 15px;
+    padding-top: 0;
+    height: 50px;
+  }
+
+  th p{
+    padding-bottom: 10px;
+  }
+}

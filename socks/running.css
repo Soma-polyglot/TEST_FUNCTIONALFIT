@@ -1,0 +1,37 @@
+
+
+.btn a{
+    background: transparent url(images/btn-bg-run.png) no-repeat center center/cover;
+    text-align: center;
+    width: 155px;
+    display: block;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-size: 14px;
+    margin: 0 0 0 auto;
+    margin-top: 30px;
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 767px){
+    .btn a {
+        margin: 30px auto 0;
+    }
+    }
+
+
+
+    @media screen and (max-width: 767px){
+      .mv-bottom img{
+        display: none;
+      }
+    }
+
+
+
+
+    @media screen and (max-width: 767px){
+      .store-flex-title{
+        margin: 0 auto; 
+      }
+    }
