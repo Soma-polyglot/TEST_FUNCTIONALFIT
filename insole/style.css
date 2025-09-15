@@ -584,7 +584,6 @@ margin: 0 20px 0 auto;
 
 
   .store-flex{
-    display: block;
     padding: 30px 0;
   }
 
@@ -607,9 +606,6 @@ margin: 0 20px 0 auto;
 
   .btn a{
     margin: 30px auto 0;
-    width: 350px;
-    padding: 30px 40px;
-    font-size: 24px;
   }
 }
 
