@@ -8132,3 +8132,21 @@
   return Swiper;
 
 }));
+
+var swiper = new Swiper('.swiper-container', {
+  loop: true,
+  autoplay: {
+    enabled: true,          // ← 明示的にオンにする
+    delay: 6000,            // ← 6秒ごとに切り替え
+    disableOnInteraction: false, // ← ユーザー操作後も続ける
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  speed: 1000               // ← 切替アニメーション時間を1秒に
+});
