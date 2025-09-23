@@ -375,25 +375,30 @@
             // sessionStorage.removeItem('authenticated');
         });
     </script>
+
+    <script src="swiper.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: true
+            },
+        });
+    </script>
+    <script src="smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 </body>
-<script>
-    var swiper = new Swiper('.swiper-container', {
-  loop: true,
-  autoplay: {
-    enabled: true,          // ← 明示的にオンにする
-    delay: 6000,            // ← 6秒ごとに切り替え
-    disableOnInteraction: false, // ← ユーザー操作後も続ける
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  speed: 1000               // ← 切替アニメーション時間を1秒に
-});
-</script>
 
 </html>
