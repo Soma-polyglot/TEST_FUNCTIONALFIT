@@ -1,3 +1,17 @@
+/* 禁止底部 logo 图片被选中 */
+.bottom img {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+/* 禁止轮播图片被选中 */
+.swiper img {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

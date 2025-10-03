@@ -11,7 +11,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-T84836J9');</script>
 <!-- End Google Tag Manager -->
-    <link rel="stylesheet" href="swiper.css">
+    <link rel="stylesheet" href="swiper-bundle.css">
     <link rel="stylesheet" href="style.css">
     <title>ファンクショナルフィット|FUNCTIONAL FIT</title>
     <link rel="icon" href="images/favicon16.ico" sizes="16x16">
@@ -68,27 +68,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
         <div class="middle pcbr">
-            <div class="swiper-container">
+            <div class="swiper pcbr">
                 <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="tights/running short tights.html"><img src="tights/images/RST_top_1 .png" alt="Swiper06"></a></div>
                     <div class="swiper-slide"><a href="insole/racing.html"><img src="images/img3.png" alt="Swiper01"></a></div>
                     <div class="swiper-slide"><a href="insole/running.html"><img src="images/img2.png" alt="Swiper02"></a></div>
                     <div class="swiper-slide"><a href="insole/allround.html"><img src="insole/images/insole-pc-black.png" alt="Swiper03"></a></div>
                     <div class="swiper-slide"><a href="socks/racing.html"><img src="socks/images/socks-pc-green.png" alt="Swiper04"></a></div>
                     <div class="swiper-slide"><a href="socks/running5.html"><img src="socks/images/running-socks-pc.png" alt="Swiper05"></a></div>
-                    <div class="swiper-slide"><a href="socks/running.html"><img src="images/img6.png" alt="Swiper06"></a></div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
         </div>
         <div class="middle spbr">
-            <div class="swiper-container">
+            <div class="swiper spbr">
                 <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="tights/running short tights.html"><img src="tights/images/RST_top_2.png" alt="Swiper06"></a></div>
                     <div class="swiper-slide"><a href="insole/racing.html"><img src="images/smart-img1.png" alt="Swiper01"></a></div>
                     <div class="swiper-slide"><a href="insole/running.html"><img src="images/smart-img2.png" alt="Swiper02"></a></div>
                     <div class="swiper-slide"><a href="insole/allround.html"><img src="images/smart-img3.png" alt="Swiper03"></a></div>
                     <div class="swiper-slide"><a href="socks/racing.html"><img src="images/smart-img4.png" alt="Swiper04"></a></div>
                     <div class="swiper-slide"><a href="socks/running5.html"><img src="images/smart-img5.png" alt="Swiper05"></a></div>
-                    <div class="swiper-slide"><a href="socks/running.html"><img src="images/smart-img6.png" alt="Swiper06"></a></div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -195,24 +195,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div> <!-- /site-content -->
     
     <!-- Swiper設定 -->
-    <script src="swiper.js"></script>
+    <script src="swiper-bundle.js"></script>
     <script>
-        var swiper = new Swiper('.swiper-container', {
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-          loop: true,
-          pagination: {
-              el: '.swiper-pagination',
-              type: 'bullets',
-              clickable: true,
-            },
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: true
-          },
-        });
+                        var swiperPC = new Swiper('.swiper.pcbr', {
+                            loop: true,
+                            pagination: {
+                                    el: '.swiper.pcbr .swiper-pagination',
+                                    type: 'bullets',
+                                    clickable: true,
+                                },
+                            autoplay: {
+                                delay: 6000,
+                                disableOnInteraction: false
+                            },
+                            speed: 1000
+                        });
+                        var swiperSP = new Swiper('.swiper.spbr', {
+                            loop: true,
+                            pagination: {
+                                    el: '.swiper.spbr .swiper-pagination',
+                                    type: 'bullets',
+                                    clickable: true,
+                                },
+                            autoplay: {
+                                delay: 6000,
+                                disableOnInteraction: false
+                            },
+                            speed: 1000
+                        });
     </script>
     <script src="smooth-scroll.polyfills.min.js"></script>
     <script>
