@@ -908,3 +908,53 @@ margin: 0 20px 0 auto;
     display: none;
   }
 }
+
+/* Page-specific centering for .flex-right when needed */
+.flex-right.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-right.center .japan100{
+  width: 120px;
+  margin-bottom: 8px;
+}
+
+.flex-right.center .btn{
+  width: 100%;
+  text-align: center;
+}
+
+.flex-right.center .btn a{
+  display: inline-block;
+  margin: 8px auto;
+}
+
+/* full-width centered container used on some product pages */
+.store-full-center{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.store-full-center .japan100{
+  width: 120px;
+  margin-bottom: 12px;
+}
+
+.store-full-center .btn{
+  width: auto;
+  text-align: center;
+}
+
+.store-full-center .btn a{
+  display: inline-block;
+  margin: 8px 6px;
+}
