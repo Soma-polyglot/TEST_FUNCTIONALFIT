@@ -958,3 +958,17 @@ margin: 0 20px 0 auto;
   display: inline-block;
   margin: 8px 6px;
 }
+
+@media screen and (max-width: 767px){
+.store-flex-title{
+  max-width: 90%;
+}
+}
+
+.store-full-center{
+  flex-direction: row !important;
+}
+
+.store-full-center{
+  gap: 30px; /* 好みで調整：12px / 20px でもOK */
+}
