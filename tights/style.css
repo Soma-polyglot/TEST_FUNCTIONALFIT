@@ -964,13 +964,12 @@ margin: 0 20px 0 auto;
 }
 
 .store-full-center{
-  gap: 30px; /* 好みで調整：12px / 20px でもOK */
+  gap: 10px; /* 好みで調整：12px / 20px でもOK */
 }
 
 .btn a {
-    background: transparent url(images/button.png) no-repeat center center/cover;
+    background: transparent url(images/big-button.png) no-repeat center center/cover;
     text-align: center;
-    width: 155px;
     display: block;
     text-decoration: none;
     padding: 10px 5px;
@@ -978,16 +977,31 @@ margin: 0 20px 0 auto;
     margin: 0 0 0 auto;
     margin-top: 30px;
     font-weight: 600;
-    transition: filter 0.3s ease, transform 0.2s ease; /* 追加 */
+    transition: background-image 0.2s ease; /* スムーズな切り替え */
 }
 
-/* ホバー時 - 追加 */
 .btn a:hover {
-    filter: brightness(0.75) saturate(1.1);
-    transform: translateY(-2px);
+    background-image: url(images/big-button-hover.png); /* ホバー時に画像を切り替え */
 }
 
-/* クリック時 - 追加 */
-.btn a:active {
-    transform: translateY(0);
+@media screen and (min-width: 1280px){
+  .btn a {
+    background: transparent url(images/big-button.png) no-repeat center center/cover;
+    width: 300px;
+    display: block;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-size: 14px;
+    margin: 0 0 0 auto;
+    margin-top: 30px;
+    font-weight: 600;
+    transition: background-image 0.2s ease; /* スムーズな切り替え */
+}
+
+.btn a:hover {
+    background-image: url(images/big-button-hover.png); /* ホバー時に画像を切り替え */
+}
+.store-full-center{
+  gap: 100px; /* 好みで調整：12px / 20px でもOK */
+}
 }
