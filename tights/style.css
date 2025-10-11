@@ -416,7 +416,7 @@ margin: 0 20px 0 auto;
 }
 
 .btn a{
-  background: transparent url(images/btn-01.png) no-repeat center center/cover;
+  background: transparent url(images/button.png) no-repeat center center/cover;
   text-align: center;
   width: 155px;
   display: block;
@@ -472,11 +472,6 @@ margin: 0 20px 0 auto;
 .spbr{
   display: none;
 }
-
-.btn a:hover{
-  opacity: 0.6;
-}
-
 
 @media screen and (max-width: 1100px) {
   .content-grid1{
